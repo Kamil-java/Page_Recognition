@@ -16,5 +16,13 @@ services:
     ports:
       - 5432:5432
     restart: always
+  page-recognize:
+    container_name: Page-Recognize
+    build:
+      context: ./pageRecognition
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
 volumes:
   api-postgres-volume:
