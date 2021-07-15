@@ -44,3 +44,9 @@ Changes the categories of the saved page.
 DELETE -> /api?url=
 ```
 Deletes saved pages.
+
+## Launching the application
+
+* We will use a docker tool to run the application
+* All you need is:
+  * have a downloaded docker, then run it in the project folder using terminal: ``` docker-compose --build ```
